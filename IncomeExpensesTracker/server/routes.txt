@@ -1,0 +1,102 @@
+//users route
+app.post("/api/v1/users/register",async(req,res)=>{
+    try {
+        res.json({
+            message:"Register Route",
+        })
+    } catch (error) {
+        res.json(error)
+    }
+})
+app.post("/api/v1/users/login",async(req,res)=>{
+    try {
+        res.json({
+            message:"Login Route",
+        })
+    } catch (error) {
+        res.json(error)
+    }
+})
+app.get("/api/v1/users/:id",async(req,res)=>{
+    try {
+        res.json({
+            message:"Profile Route",
+        })
+    } catch (error) {
+        res.json(error)
+    }
+})
+app.delete("/api/v1/users/:id",async(req,res)=>{
+    try {
+        res.json({
+            message:"Delete Route",
+        })
+    } catch (error) {
+        res.json(error)
+    }
+})
+app.put("/api/v1/users/:id",async(req,res)=>{
+    try {
+        res.json({
+            message:"Update Route",
+        })
+    } catch (error) {
+        res.json(error)
+    }
+})
+//accounts route
+app.post("/api/v1/accounts",async(req,res)=>{
+    try {
+        res.json({
+            message:"Accounts Route",
+        })
+    } catch (error) {
+        res.json(error)
+    }
+})
+app.get("/api/v1/accounts/:id",async(req,res)=>{
+    try {
+        res.json({
+            message:"Single account Route",
+        })
+    } catch (error) {
+        res.json(error)
+    }
+})
+app.put("/api/v1/accounts/:id",async(req,res)=>{
+    try {
+        res.json({ 
+            message:"Update single account Route",
+        })
+    } catch (error) {
+        res.json(error)
+    }
+})
+app.delete("/api/v1/accounts/:id",async(req,res)=>{
+    try {
+        res.json({
+            message:"Delete single account Route",
+        })
+    } catch (error) {
+        res.json(error)
+    }
+})
+//transactions
+app.post("/api/v1/transactions",async(req,res)=>{
+    try {
+        res.json({
+            message:"Transaction Route",
+        })
+    } catch (error) {
+        res.json(error)
+    }
+})
+app.get("/api/v1/transactions/:id",async(req,res)=>{
+    try {
+        res.json({
+            message:"get Single transaction Route",
+        })
+    } catch (error) {
+        res.json(error)
+    }
+})
